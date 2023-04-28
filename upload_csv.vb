@@ -1,6 +1,6 @@
 ﻿Imports System.IO
 
-Public Class Form6
+Public Class upload_csv
     Private Sub UploadCSVbtn_Click(sender As Object, e As EventArgs) Handles UploadCSVbtn.Click
         Dim openFileDialog As New OpenFileDialog()
         openFileDialog.Filter = "CSV Files (*.csv)|*.csv"
@@ -27,5 +27,10 @@ Public Class Form6
 
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
 
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        main.Show()
+        Close()
     End Sub
 End Class

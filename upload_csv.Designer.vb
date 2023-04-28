@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form6
+Partial Class upload_csv
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -24,13 +24,14 @@ Partial Class Form6
     Private Sub InitializeComponent()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.UploadCSVbtn = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 12)
+        Me.DataGridView1.Location = New System.Drawing.Point(236, 12)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
@@ -39,18 +40,30 @@ Partial Class Form6
         '
         'UploadCSVbtn
         '
-        Me.UploadCSVbtn.Location = New System.Drawing.Point(598, 51)
+        Me.UploadCSVbtn.Location = New System.Drawing.Point(101, 91)
         Me.UploadCSVbtn.Name = "UploadCSVbtn"
-        Me.UploadCSVbtn.Size = New System.Drawing.Size(75, 23)
+        Me.UploadCSVbtn.Size = New System.Drawing.Size(101, 43)
         Me.UploadCSVbtn.TabIndex = 1
         Me.UploadCSVbtn.Text = "Upload"
         Me.UploadCSVbtn.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(12, 22)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(96, 40)
+        Me.Button1.TabIndex = 2
+        Me.Button1.Text = "Back"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Form6
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackgroundImage = Global.Act4Dycoco.My.Resources.Resources.hahahaw
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.UploadCSVbtn)
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "Form6"
@@ -62,4 +75,5 @@ Partial Class Form6
 
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents UploadCSVbtn As Button
+    Friend WithEvents Button1 As Button
 End Class

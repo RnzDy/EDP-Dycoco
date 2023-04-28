@@ -1,5 +1,5 @@
 ﻿Imports MySql.Data.MySqlClient
-Public Class Form5
+Public Class orders
     Dim cmd As New MySqlCommand
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
 
@@ -11,7 +11,7 @@ Public Class Form5
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Form2.Show()
+        main.Show()
         Close()
     End Sub
 
@@ -39,5 +39,9 @@ Public Class Form5
         Finally
             myconn.Dispose()
         End Try
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Call ExportToExcel(Me.DataGridView1, "Orders.xlsx")
     End Sub
 End Class

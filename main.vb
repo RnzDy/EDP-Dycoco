@@ -1,31 +1,31 @@
 ﻿Imports MySql.Data.MySqlClient
-Public Class Form2
+Public Class main
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Form3.Show()
+        products.Show()
         Close()
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Form5.Show()
+        orders.Show()
         Close()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Form4.Show()
+        employees.Show()
         Close()
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Form1.Show()
+        login.Show()
         Close()
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        Form6.ShowDialog()
+        upload_csv.ShowDialog()
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
@@ -49,5 +49,10 @@ Public Class Form2
         ElseIf backup.ShowDialog = Windows.Forms.DialogResult.Cancel Then
             Return
         End If
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        customers.Show()
+        Close()
     End Sub
 End Class

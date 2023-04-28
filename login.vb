@@ -1,6 +1,6 @@
 ﻿Imports MySql.Data.MySqlClient
 
-Public Class Form1
+Public Class login
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
     End Sub
 
@@ -20,7 +20,7 @@ Public Class Form1
 
         If reader.HasRows Then
             MessageBox.Show("Success Login", "Welcome")
-            Form2.Show()
+            main.Show()
             Hide()
 
         Else

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form2
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class main
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form2
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -28,6 +28,7 @@ Partial Class Form2
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -68,7 +69,7 @@ Partial Class Form2
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(225, 83)
+        Me.Button5.Location = New System.Drawing.Point(214, 169)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(133, 51)
         Me.Button5.TabIndex = 4
@@ -77,20 +78,30 @@ Partial Class Form2
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(225, 169)
+        Me.Button6.Location = New System.Drawing.Point(214, 259)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(133, 51)
         Me.Button6.TabIndex = 5
         Me.Button6.Text = "Backup Database"
         Me.Button6.UseVisualStyleBackColor = True
         '
-        'Form2
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(214, 83)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(133, 51)
+        Me.Button7.TabIndex = 6
+        Me.Button7.Text = "Customer"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Act4Dycoco.My.Resources.Resources.hahahaw
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(839, 495)
+        Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
@@ -98,7 +109,7 @@ Partial Class Form2
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.ForeColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.Name = "Form2"
+        Me.Name = "main"
         Me.Text = "Form2"
         Me.ResumeLayout(False)
 
@@ -110,4 +121,5 @@ Partial Class Form2
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
+    Friend WithEvents Button7 As Button
 End Class
