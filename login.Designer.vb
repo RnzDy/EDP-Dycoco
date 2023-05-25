@@ -22,6 +22,7 @@ Partial Class login
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(login))
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TBusername = New System.Windows.Forms.TextBox()
         Me.TBpassword = New System.Windows.Forms.TextBox()
@@ -72,7 +73,7 @@ Partial Class login
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Password"
         '
-        'Form1
+        'login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -84,7 +85,8 @@ Partial Class login
         Me.Controls.Add(Me.TBpassword)
         Me.Controls.Add(Me.TBusername)
         Me.Controls.Add(Me.Button1)
-        Me.Name = "Form1"
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Name = "login"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
         Me.PerformLayout()

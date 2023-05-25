@@ -22,6 +22,7 @@ Partial Class upload_csv
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(upload_csv))
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.UploadCSVbtn = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -56,7 +57,7 @@ Partial Class upload_csv
         Me.Button1.Text = "Back"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Form6
+        'upload_csv
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -66,7 +67,8 @@ Partial Class upload_csv
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.UploadCSVbtn)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Name = "Form6"
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Name = "upload_csv"
         Me.Text = "fdd"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
